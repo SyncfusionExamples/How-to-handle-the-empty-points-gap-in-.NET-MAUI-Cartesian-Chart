@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="EmptyPointsSample.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:EmptyPointsSample"
+    Shell.FlyoutBehavior="Disabled">
+
+    <TabBar>
+        <ShellContent
+    Title="EmptyPointMode None"
+    ContentTemplate="{DataTemplate local:EmptyPointModeNone}"
+    Route="EmptyPointModeNone"/>
+
+        <ShellContent
+    Title="EmptyPointMode Zero"
+    ContentTemplate="{DataTemplate local:EmptyPointModeZero}"
+    Route="EmptyPointModeZero"/>
+
+        <ShellContent
+    Title="EmptyPointMode Average"
+    ContentTemplate="{DataTemplate local:EmptyPointModeAverage}"
+    Route="EmptyPointModeAverage"/>
+
+        <ShellContent
+    Title="Customizing EmptyPoints"
+    ContentTemplate="{DataTemplate local:CustomizingEmptyPoints}"
+    Route="CustomizingEmptyPoints"/>
+
+    </TabBar>
+
+</Shell>
