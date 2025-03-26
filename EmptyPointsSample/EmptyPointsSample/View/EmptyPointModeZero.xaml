@@ -36,7 +36,7 @@
                           XBindingPath="Product"
                           YBindingPath="Sales"
                           StrokeWidth="2"
-                          Fill="Blue"
+                          Fill="#2196F3"
                           ShowDataLabels="True"
                           EmptyPointMode="Zero">
         </chart:AreaSeries>

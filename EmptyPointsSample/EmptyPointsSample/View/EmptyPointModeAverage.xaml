@@ -35,7 +35,7 @@
         <chart:ColumnSeries ItemsSource="{Binding ProductSales}"
                             XBindingPath="Product"
                             YBindingPath="Sales"
-                            Fill="Blue"
+                            Fill="#2196F3"
                             ShowDataLabels="True"
                             EmptyPointMode="Average">
         </chart:ColumnSeries>
