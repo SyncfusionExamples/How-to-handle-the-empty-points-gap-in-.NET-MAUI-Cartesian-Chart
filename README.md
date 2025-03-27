@@ -159,4 +159,4 @@ Path too long exception
 
 If you are facing a path too long exception when building this example project, close Visual Studio and rename the repository to a shorter name before building the project.
 
-For more details, refer to the KB on [How to handle the empty points gap in .NET MAUI Cartesian Chart]()
+For more details, refer to the KB on [how to handle the empty points gap in .NET MAUI Cartesian Chart]()
