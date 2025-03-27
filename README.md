@@ -1,8 +1,6 @@
 # How to handle the empty points gap in .NET MAUI Cartesian Chart
 In .NET MAUI [SfCartesianChart](https://www.syncfusion.com/maui-controls/maui-cartesian-charts), empty points represent missing or null data in a series. These points can occur due to unavailable data, improper formatting, or explicit assignment of null or double.NaN.
 
-In .NET MAUI [SfCartesianChart](https://www.syncfusion.com/maui-controls/maui-cartesian-charts), empty points represent missing or null data in a series. These points can occur due to unavailable data, improper formatting, or explicit assignment of null or double.NaN.
-
 This article covers handling empty points using [EmptyPointMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.EmptyPointMode.html) to manage missing data and customizing empty points to enhance their visual appearance.
 
 **Handling Empty Points Using EmptyPointMode**
