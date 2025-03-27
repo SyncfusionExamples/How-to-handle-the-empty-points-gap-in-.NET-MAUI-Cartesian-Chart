@@ -10,7 +10,7 @@
         <local:ViewModel/>
     </ContentPage.BindingContext>
 
-    <chart:SfCartesianChart IsTransposed="True" Margin="20">
+    <chart:SfCartesianChart Margin="20">
 
         <chart:SfCartesianChart.Title>
             <Label Text="Sales Performance Across Product Categories" FontSize="14" HorizontalOptions="Center" ></Label>
@@ -33,13 +33,12 @@
         </chart:SfCartesianChart.YAxes>
 
         <chart:ColumnSeries ItemsSource="{Binding ProductSales}"
-                           XBindingPath="Product"
-                           YBindingPath="Sales"
-                           Fill="#2196F3"
-                           ShowDataLabels="True"
-                           EmptyPointMode="Average">
+                            XBindingPath="Product"
+                            YBindingPath="Sales"
+                            Fill="#2196F3"
+                            EmptyPointMode="Average">
             <chart:ColumnSeries.EmptyPointSettings>
-                <chart:EmptyPointSettings Fill="LightGrey" StrokeWidth="2" />
+                <chart:EmptyPointSettings Fill="LightGrey"/>
             </chart:ColumnSeries.EmptyPointSettings>
         </chart:ColumnSeries>
 
