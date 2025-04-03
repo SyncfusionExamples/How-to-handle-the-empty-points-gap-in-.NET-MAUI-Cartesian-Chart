@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:chart="clr-namespace:Syncfusion.Maui.Toolkit.Charts;assembly=Syncfusion.Maui.Toolkit"
+             xmlns:local="clr-namespace:EmptyPointsSample"
+             x:Class="EmptyPointsSample.EmptyPointModeZero"
+             Title="EmptyPointModeZero">
+
+    <ContentPage.BindingContext>
+        <local:ViewModel/>
+    </ContentPage.BindingContext>
+
+    <chart:SfCartesianChart Margin="20">
+
+        <chart:SfCartesianChart.Title>
+            <Label Text="Sales Performance Across Product Categories" FontSize="14" HorizontalOptions="Center" ></Label>
+        </chart:SfCartesianChart.Title>
+
+        <chart:SfCartesianChart.XAxes>
+            <chart:CategoryAxis ShowMajorGridLines="False" EdgeLabelsDrawingMode="Center" PlotOffsetEnd="20" PlotOffsetStart="20">
+                <chart:CategoryAxis.LabelStyle>
+                    <chart:ChartAxisLabelStyle FontSize="14" />
+                </chart:CategoryAxis.LabelStyle>
+            </chart:CategoryAxis>
+        </chart:SfCartesianChart.XAxes>
+
+        <chart:SfCartesianChart.YAxes>
+            <chart:NumericalAxis Minimum="0" Maximum="80" Interval="20">
+                <chart:NumericalAxis.LabelStyle>
+                    <chart:ChartAxisLabelStyle FontSize="14" />
+                </chart:NumericalAxis.LabelStyle>
+            </chart:NumericalAxis>
+        </chart:SfCartesianChart.YAxes>
+
+        <chart:AreaSeries ItemsSource="{Binding ProductSales}"
+                          XBindingPath="Product"
+                          YBindingPath="Sales"
+                          StrokeWidth="2"
+                          Fill="#2196F3"
+                          EmptyPointMode="Zero">
+        </chart:AreaSeries>
+
+    </chart:SfCartesianChart>
+</ContentPage>
